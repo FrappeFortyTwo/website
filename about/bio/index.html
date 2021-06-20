@@ -1,0 +1,22 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><link rel=stylesheet href=/css/master.css><title>Sousich</title></head><body><div id=btn onclick=openNav()><div class=bar1></div><div class=bar2a></div><div class=bar2b></div><div class=bar3></div></div><aside id=nav><nav><ul><li><a href><h1>Sousich</h1></a></li><li><a href=/about/>About</a></li><li><a href=/blog/>Blog</a></li><li><a href=/cheatsheet/>Cheats</a></li><li><a href=/curated/>Curated</a></li><li><a href=/malware/>Malware</a></li><li><a href=/notes/>Notes</a></li><li><a href=/projects/>Projects</a></li><li><a href=/compass/>Trail</a></li><h3>Professional Bio</h3><p>What mischief I've been upto</p></ul><br><br></nav></aside><main id=main class=container><article class=markdown><script src=/mermaid.min.js></script><figure style=width:fit-content;background-color:#d5dce2><p class=mermaid>classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label</p></figure><h1 id=concurrency>Concurrency</h1><p>When we think about <code>concurrency</code> another idea automatically comes attached to it that is <code>parallelism</code>. Before discussing concurrency and how it works, we must have some idea about both these concepts to avoid confusion.</p><p>A <code>blocking call</code> is call is where program execution comes to a halt, such as while sleeping, or when waiting for an http response.</p><h2 id=concurrency-1>Concurrency</h2><p><code>single CPU Core</code></p><hr><details><summary>somee shit</summary>
+Scheduler runs one go routine until it finishes or makes a blocking call, and switches to another. This way multiple chunks of code run (kinda) at the same time. By default go tries to use only a single core.
+We can have multiple threads executing code. If one thread blocks, another one is picked up and worked on.
+lorem</details><figure style=width:fit-content;background-color:#d5dce2><p class=mermaid>graph TD
+K[CPU Core]
+K --- A[Scheduler]
+A --- B[Go Routine]
+A --- C[Go Routine]
+A --- D[Go Routine]</p></figure><h1 id=hello>Hello</h1><link rel=stylesheet href=/katex/katex.min.css><script defer src=/katex/katex.min.js></script><script defer src=/katex/auto-render.min.js onload=renderMathInElement(document.body)></script><span>\(f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi\)</span></article></main></body><script src=/js/ui.js></script></html>
