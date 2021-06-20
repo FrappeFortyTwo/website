@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+    <!-- HEAD -->
+    {{- partial "head" . -}}
+    <body>
+        <!-- NAV -->
+        {{- partial "nav" . -}}
+        <!-- CONTENT -->
+        {{ block "singleContent" . }}{{ end }}
+    </body>
+    <!-- JS -->
+    <script src="/js/ui.js"></script>
+</html>

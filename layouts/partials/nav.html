@@ -1,0 +1,43 @@
+<!-- side nav button -->
+<div id="btn" onclick="openNav()">
+    <div class="bar1"></div>
+    <div class="bar2a"></div>
+    <div class="bar2b"></div>
+    <div class="bar3"></div>
+</div>
+<!-- side nav nav -->
+<aside id="nav">
+    <nav>
+        <ul>
+            <!-- Site Heading -->
+            <li>
+                <a href="{{ .Site.BaseURL }}">
+                    <h1>
+                        {{ .Site.Title }}
+                    </h1>
+                </a>
+            </li>
+            <!-- Site Sections -->
+            {{ range .Site.Menus.main }}
+            <li>
+                <a href="{{ .URL }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+            <!-- Page Heading -->
+            <h3>{{ .Title }}</h3>
+            <!-- Page Description -->
+            <p>{{ .Description }}</p>
+            <!-- Page Toc -->
+            <!-- <li> -->
+            {{ if .IsPage }}
+            <!-- ENABLE IF WORDCOUNT > 600 -->
+            {{ if and .IsPage (gt .WordCount 600) }}
+            <a href="{{ .Permalink }}">{{.TableOfContents }}</a>
+            <!-- </li> -->
+            {{ end }}
+            {{ end }}
+        </ul>
+        <br>
+        <br>
+    </nav>
+</aside>

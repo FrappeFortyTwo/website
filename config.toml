@@ -1,0 +1,42 @@
+# Theme Details
+
+name = "Thyme"
+license = "GNU AGPLv3"
+licenselink = "https://gitlab.com/sousich/thyme/-/blob/main/LICENSE"
+homepage = "https://sousich.dev/"
+tags = ["Blog","Responsive","Clean","Simple","Minimal","Personal","Fast","Light",]
+features = ["Simple clean design","Light and mobile friendly","Zero initial configuration"]
+description = "A minimal personal website theme that supports blogs, mermaid js and katex."
+min_version = "0.41.0"
+
+# Site Parameters
+
+sectionPagesMenu = "main"
+title = "Sousich"
+
+# Author Details
+
+[author]
+  name = "Sousich"
+  homepage = "https://sousich.dev"
+
+# Markup Hightlight
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = "true"
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "rrt"
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
